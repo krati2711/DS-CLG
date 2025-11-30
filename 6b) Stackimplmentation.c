@@ -61,7 +61,7 @@ void peeks()
     else printf("%d\n",top->data);
 }
 
-void main1()
+void main()
 {
     int c;
     printf("....MENU.... \n");
@@ -90,7 +90,7 @@ void main1()
             }
         case 3:
             {
-                displays;
+                displays();
                 printf("\n");
                 break;
             }
