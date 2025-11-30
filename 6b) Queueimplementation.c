@@ -39,8 +39,8 @@ void dequeue()
         front=front->next;
         printf("the popped element is: %d\n",p->data);
         free(p);
-        printf("element deleted from the front\n");
     }
+    if (front == NULL)  rear = NULL;
 }
 void peek()
 {
@@ -53,7 +53,7 @@ void peek()
 
 void display2()
 {
-    if(front==NULL) printf("empty stack UNDERFLOW!!\n");
+    if(front==NULL) printf("empty queue UNDERFLOW!!\n");
     else{
             struct node *check=front;
             while(check!=NULL){
