@@ -59,7 +59,7 @@ void insertatanypos(int val)
         }
         check=check->next;
     }
-    if(check->next=NULL){
+    if(check->next==NULL){
         insert_end(val);
         return;
     }
